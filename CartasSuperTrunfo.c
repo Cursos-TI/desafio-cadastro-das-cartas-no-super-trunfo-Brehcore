@@ -12,25 +12,25 @@ int main() {
 
     // Entrada de dados da primeira carta
     printf("Digite o estado da primeira cidade (A-H): ");
-    scanf(" %c", &estado1);
+    scanf(" %c", &estado1); // Espaço antes do %c para evitar problemas com buffer do teclado
 
     printf("Digite o código da primeira carta (Ex: A01): ");
-    scanf("%s", codigo1);
+    scanf("%s", codigo1); // Captura string sem espaços
 
     printf("Digite o nome da primeira cidade: ");
-    scanf(" %[^\n]", nome1);
+    scanf(" %[^\n]", nome1); // Captura string com espaços (ex: "Rio de Janeiro")
 
     printf("Digite a população da primeira cidade: ");
-    scanf("%d", &populacao1);
+    scanf("%d", &populacao1); // Captura um número inteiro
 
     printf("Digite a área da primeira cidade km²: ");
-    scanf("%f", &area1);
+    scanf("%f", &area1); // Captura um número decimal
 
     printf("Digite o PIB da primeira cidade: ");
-    scanf("%f", &pib1);
+    scanf("%f", &pib1); // Captura um número decimal
 
     printf("Digite o número de pontos turísticos da primeira cidade: ");
-    scanf("%d", &pontosTuristicos1);
+    scanf("%d", &pontosTuristicos1); // Captura um número inteiro
 
     // Variáveis da segunda carta
     char estado2;
@@ -41,7 +41,7 @@ int main() {
     float pib2;
     int pontosTuristicos2;
 
-    // Entrada de dados da segunda carta
+    // Entrada de dados da segunda carta (mesmo processo da primeira carta)
     printf("\nDigite o estado da segunda cidade (A-H): ");
     scanf(" %c", &estado2);
 
